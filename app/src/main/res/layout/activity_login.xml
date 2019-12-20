@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/bg_redec">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:padding="10dp"
+            android:text="Iniciar Sesion"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColorHint="#FFFFFF"
+            app:passwordToggleTint="#FFFFFF">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:backgroundTintMode="src_in"
+                android:fontFamily="@font/roboto"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:selectAllOnFocus="false"
+                android:singleLine="false"
+                android:soundEffectsEnabled="false"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textColorLink="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textColorHint="#FFFFFF"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#FFFFFF"
+            app:passwordToggleTintMode="multiply">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:fontFamily="@font/roboto"
+                android:hint="Password"
+                android:inputType="textVisiblePassword|textPassword"
+                android:password="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/card_bg"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="5dp"
+            android:text="Ingresar"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:text="Registrar"
+            android:textColor="@color/colorAccent"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/olvidoContraseña"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿Olvido su contraseña?"
+            android:textColor="@color/colorAccent"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

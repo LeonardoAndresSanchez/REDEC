@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/card_bg_list_ofertas"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:layout_gravity="center"
+    android:elevation="3dp">
+    <TextView
+        android:id="@+id/txtclose"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:textColor="@color/fontColor"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="4dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:background="@drawable/card_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notificaciones"
+        android:textSize="18dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:textColor="@color/fontColor"/>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_gravity="center_horizontal"
+        android:clipToPadding="false">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_pop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="130dp"
+            android:layout_gravity="center_horizontal"/>
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/saeta"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</LinearLayout>

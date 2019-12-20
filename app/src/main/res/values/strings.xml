@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GesportB</string>
+
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="login_preference">com.example.recadatos_login_preference</string>
+    <string name="login_status_preferences">com.example.recadatos_login_status_preferences</string>
+    <string name="select">Selecionar escenario</string>
+    <string name="perfil">Perfil</string>
+</resources>
